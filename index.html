@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONORA - Music Player UI</title>
+  <link rel="icon" href="images/daily-mix.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <a href="#" class="logo">SONORA</a>
+
+      <nav class="menu">
+        <a href="#" class="nav-home active">Home</a>
+        <a href="#" class="nav-explore">Explore</a>
+        <a href="#" class="nav-search">Search</a>
+      </nav>
+
+      <nav class="menu library-menu">
+        <a href="#" class="nav-library">Your Library</a>
+        <a href="#" class="nav-recent">Recently Played</a>
+        <a href="#" class="nav-fav">Favourite Songs</a>
+        <a href="#" class="nav-playlists">My Playlists</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+
+      <header class="topbar">
+        <h1>Good Evening</h1>
+        <label class="search-bar">
+          <input type="text" placeholder="What do you want to listen to?">
+        </label>
+      </header>
+
+      <section class="featured">
+        <p class="label">Featured Playlist</p>
+        <h2>Midnight Drive</h2>
+        <p class="featured-text">Smooth beats for late night rides. 45 songs, 2 hr 30 min.</p>
+        <button type="button" class="play-pill">&#9654; Play</button>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Recently Played</h2>
+        <div class="card-grid">
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/neon-skyline.jpg" alt="Neon Skyline album artwork">
+          </figure>
+          <h3>Neon Skyline</h3>
+          <p>Luna Ray</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/golden-hour.jpg" alt="Golden Hour album artwork">
+          </figure>
+          <h3>Golden Hour</h3>
+          <p>Kairo</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/paper-moons.jpg" alt="Paper Moons album artwork">
+          </figure>
+          <h3>Paper Moons</h3>
+          <p>Aria Vale</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/slow-motion.jpg" alt="Slow Motion album artwork">
+          </figure>
+          <h3>Slow Motion</h3>
+          <p>The Velvet Hours</p>
+        </article>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Made For You</h2>
+        <div class="playlist-grid">
+
+        <article class="playlist-card">
+          <img src="images/daily-mix.jpg" alt="Daily Mix 1 playlist cover">
+          <h3>Daily Mix 1</h3>
+          <p>Luna Ray, Kairo and more</p>
+        </article>
+
+        <article class="playlist-card">
+          <img src="images/chill-evenings.jpg" alt="Chill Evenings playlist cover">
+          <h3>Chill Evenings</h3>
+          <p>Soft tracks to relax</p>
+        </article>
+
+        <article class="playlist-card">
+          <img src="images/focus-flow.jpg" alt="Focus Flow playlist cover">
+          <h3>Focus Flow</h3>
+          <p>Calm beats for work</p>
+        </article>
+
+        <article class="playlist-card">
+          <img src="images/workout-boost.jpg" alt="Workout Boost playlist cover">
+          <h3>Workout Boost</h3>
+          <p>High energy tracks</p>
+        </article>
+
+        <article class="playlist-card">
+          <img src="images/road-trip.jpg" alt="Road Trip Hits playlist cover">
+          <h3>Road Trip Hits</h3>
+          <p>Songs for the long drive</p>
+        </article>
+
+        <article class="playlist-card">
+          <img src="images/acoustic-mornings.jpg" alt="Acoustic Mornings playlist cover">
+          <h3>Acoustic Mornings</h3>
+          <p>Gentle guitars and vocals</p>
+        </article>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Trending Albums</h2>
+        <div class="card-grid">
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/neon-nights.jpg" alt="Neon Nights album artwork">
+          </figure>
+          <h3>Neon Nights</h3>
+          <p>Luna Ray</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/afterglow.jpg" alt="Afterglow album artwork">
+          </figure>
+          <h3>Afterglow</h3>
+          <p>Kairo</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/static-dreams.jpg" alt="Static Dreams album artwork">
+          </figure>
+          <h3>Static Dreams</h3>
+          <p>The Velvet Hours</p>
+        </article>
+
+        <article class="card">
+          <figure class="art">
+            <img src="images/blue-horizon.jpg" alt="Blue Horizon album artwork">
+          </figure>
+          <h3>Blue Horizon</h3>
+          <p>Aria Vale</p>
+        </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="now-panel">
+      <h2>Now Playing</h2>
+
+      <figure class="panel-art">
+        <img src="images/neon-skyline.jpg" alt="Neon Skyline album artwork">
+      </figure>
+
+      <div class="panel-song">
+        <h3>Neon Skyline</h3>
+        <p>Luna Ray</p>
+        <button type="button" class="fav-btn" aria-label="Favourite">&#9829;</button>
+      </div>
+
+      <dl class="panel-info">
+        <dt>Playing from</dt>
+        <dd>Midnight Drive</dd>
+        <dt>Album</dt>
+        <dd>Neon Nights</dd>
+        <dt>Duration</dt>
+        <dd>3:42</dd>
+      </dl>
+
+      <h3 class="queue-title">Up Next</h3>
+      <ol class="queue">
+
+        <li>
+          <img src="images/golden-hour.jpg" alt="Golden Hour artwork">
+          <h4>Golden Hour</h4>
+          <p>Kairo</p>
+          <span>3:12</span>
+        </li>
+
+        <li>
+          <img src="images/paper-moons.jpg" alt="Paper Moons artwork">
+          <h4>Paper Moons</h4>
+          <p>Aria Vale</p>
+          <span>4:05</span>
+        </li>
+
+        <li>
+          <img src="images/slow-motion.jpg" alt="Slow Motion artwork">
+          <h4>Slow Motion</h4>
+          <p>The Velvet Hours</p>
+          <span>3:48</span>
+        </li>
+
+      </ol>
+    </aside>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">SONORA</a>
+        <p>A modern music player design for listening, discovering and enjoying your favourite songs.</p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+
+    <p class="copyright">Copyright &copy; 2026 SONORA | Created by Mo Anas Mev.</p>
+  </footer>
+
+  <section class="player" aria-label="Music player design">
+
+    <div class="player-song">
+      <img src="images/neon-skyline.jpg" alt="Neon Skyline thumbnail">
+      <h4>Neon Skyline</h4>
+      <p>Luna Ray</p>
+    </div>
+
+    <div class="player-center">
+      <div class="buttons">
+        <button type="button" aria-label="Shuffle">&#8644;</button>
+        <button type="button" aria-label="Previous">&#9664;&#9664;</button>
+        <button type="button" class="play-btn" aria-label="Play">&#9654;</button>
+        <button type="button" aria-label="Next">&#9654;&#9654;</button>
+        <button type="button" aria-label="Repeat">&#8635;</button>
+      </div>
+
+      <div class="progress-row">
+        <span>1:24</span>
+        <div class="progress">
+          <div class="progress-fill"></div>
+        </div>
+        <span>3:42</span>
+      </div>
+    </div>
+
+    <div class="volume">
+      <span>&#9834;</span>
+      <div class="volume-bar">
+        <div class="volume-fill"></div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
